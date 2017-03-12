@@ -1,0 +1,15 @@
+#include<stdio.h>
+int kaijo(int );
+main(){
+  int a;
+  a=kaijo(10);
+  printf("10! = %d",a);
+}
+int kaijo(int n){
+  int a;
+  if(n==0){
+    return a;
+  }else{
+    a=n+kaijo(n-1);
+  }
+}

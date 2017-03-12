@@ -1,0 +1,62 @@
+#include<stdio.h>
+#include<stdlib.h>
+int stack[50];
+int i=0;
+main(){
+  char c;
+  int a,b,d,e;
+  while((c = getchar())!='\n'){
+    if(c>='0'&&c<='9'){
+      e=dtoi(c);
+      void push(int e);
+    }
+    if(c=='+'){
+      a=pop();
+      i--;
+      b=pop();
+       i--;
+       d=a+b;
+    }
+    if(c=='*'){
+      a=pop();
+      i--;
+      b=pop();
+      i--;
+      d=a*b;
+    }
+    if(c=='/'){
+      a=pop();
+      i--;
+      b=pop();
+      i--;
+       d=a/b;
+    }
+   void print_stack();
+    
+  }
+}
+  void push(int c){ 
+     stack[i]=c;
+     i++;
+   }
+   int pop()
+   {int c;
+     c=stack[i];
+     return c;
+     
+   }
+ int isemptry(){}
+ int dtoi(char *c){
+   int a;
+   a='c';
+   return a;
+ }
+ void print_stack(){
+   int j;
+   for(j=0;j<i;j++){
+     printf("%d",stack[j]);
+   }
+   printf("\n");
+  
+ }
+ 

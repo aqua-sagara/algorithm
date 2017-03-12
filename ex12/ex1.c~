@@ -1,0 +1,9 @@
+#include<stdio.h>
+main()
+{
+  int c[]="WHITECHOCOLATE";
+  int i;
+  for(i=0;i<14;i++){
+    printf("%c:%d\n",c[i],c[i]-'A');
+  }
+}
